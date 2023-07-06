@@ -30,7 +30,7 @@ namespace PracticaGuiada01.Controllers
             .ToArray();
         }
         [HttpPost]
-        public string Mensaje([FromBody] Mensaje mensaje)
+        /*public string Mensaje([FromBody] Mensaje mensaje)
         {
             Mensaje algo = new Mensaje(mensaje.Nombre, mensaje.Edad);
 
@@ -39,7 +39,18 @@ namespace PracticaGuiada01.Controllers
             }
 
             return String.Format($"Hola mi nombre es {mensaje.Nombre} y tengo { mensaje.Edad} años");
+        }*/
+        public string registarMascota([FromBody] Gato mascota) {
+
+            Gato registarGato = new Gato()
+            {
+                Nombre = "Soarata",
+                Edad = 3,
+                Raza = "sin raza especifica"
+            };
+        
+            return String.Format($"El gato de nombre {mascota.Nombre} tiene {mascota.Edad} años felinos, de raza {mascota.Raza}");
         }
-    
+
     }
 }

@@ -19,8 +19,8 @@ namespace PracticaGuiada01.Modelos
         public string Nombre { get; set; }
         public int Edad { get; set; }
         public string Direccion { get; set; }
-       
     }
+
     public class PersonaPuesto : Persona
     {
         public double Sueldo { get; set; }
