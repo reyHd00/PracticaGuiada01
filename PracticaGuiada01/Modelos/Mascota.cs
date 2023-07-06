@@ -9,19 +9,15 @@ namespace PracticaGuiada01.Modelos
         public int Edad { get; set; }
         public string Color { get; set; }
 
-        public void Comer()
-        {
-            Console.WriteLine("La mascota está comiendo.");
-        }
     }
 
-    // Clase hija
+    // Clase hijo
     public class Gato : Mascota
     {
-        public void Maullar()
-        {
-            Console.WriteLine("El gato está maullando.");
-        }
+        public string Raza { get; set; }
+        public string ColorPelaje { get; set; }
+
+        
     }
 
 }
